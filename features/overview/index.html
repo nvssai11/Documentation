@@ -7,11 +7,11 @@
         
         <meta name="author" content="WE">
         
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <title>Jigsaw Puzzle Application</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Overview - Jigsaw Puzzle Application</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
@@ -20,7 +20,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="/.">Jigsaw Puzzle Application</a>
+                <a class="navbar-brand" href="../..">Jigsaw Puzzle Application</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -31,18 +31,18 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="/." class="nav-link">Home</a>
+                                <a href="../.." class="nav-link">Home</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/features/overview/" class="dropdown-item">Overview</a>
+    <a href="./" class="dropdown-item active">Overview</a>
 </li>
                                     
 <li>
-    <a href="/features/real_time_interaction/" class="dropdown-item">Real-Time Interaction</a>
+    <a href="../real_time_interaction/" class="dropdown-item">Real-Time Interaction</a>
 </li>
                                 </ul>
                             </li>
@@ -51,31 +51,31 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/workflow/overview/" class="dropdown-item">Overview</a>
+    <a href="../../workflow/overview/" class="dropdown-item">Overview</a>
 </li>
                                     
 <li>
-    <a href="/workflow/socket_connection/" class="dropdown-item">Socket Connection</a>
+    <a href="../../workflow/socket_connection/" class="dropdown-item">Socket Connection</a>
 </li>
                                     
 <li>
-    <a href="/workflow/drag_and_drop/" class="dropdown-item">Drag-and-Drop</a>
+    <a href="../../workflow/drag_and_drop/" class="dropdown-item">Drag-and-Drop</a>
 </li>
                                     
 <li>
-    <a href="/workflow/puzzle_completion/" class="dropdown-item">Puzzle Completion</a>
+    <a href="../../workflow/puzzle_completion/" class="dropdown-item">Puzzle Completion</a>
 </li>
                                     
 <li>
-    <a href="/workflow/websocket_messages/" class="dropdown-item">WebSocket Messages</a>
+    <a href="../../workflow/websocket_messages/" class="dropdown-item">WebSocket Messages</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="/api_reference/" class="nav-link">API Reference</a>
+                                <a href="../../api_reference/" class="nav-link">API Reference</a>
                             </li>
                             <li class="navitem">
-                                <a href="/faq/" class="nav-link">FAQ</a>
+                                <a href="../../faq/" class="nav-link">FAQ</a>
                             </li>
                         </ul>
 
@@ -85,6 +85,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../.." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../real_time_interaction/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -92,15 +102,54 @@
 
         <div class="container">
             <div class="row">
-
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
 
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#features-overview" class="nav-link">Features Overview</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#real-time-collaboration" class="nav-link">Real-time Collaboration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#drag-and-drop-functionality" class="nav-link">Drag-and-Drop Functionality</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#feedback-system" class="nav-link">Feedback System</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dynamic-progress-updates" class="nav-link">Dynamic Progress Updates</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
+<h1 id="features-overview">Features Overview</h1>
+<p>The Jigsaw Puzzle application provides an interactive puzzle-solving experience with the following core features:</p>
+<h2 id="real-time-collaboration">Real-time Collaboration</h2>
+<p>Multiple participants can solve a puzzle simultaneously. The application uses WebSockets to synchronize progress and broadcast updates.</p>
+<h2 id="drag-and-drop-functionality">Drag-and-Drop Functionality</h2>
+<p>Participants can drag puzzle pieces and drop them onto a grid, mimicking physical puzzle assembly.</p>
+<h2 id="feedback-system">Feedback System</h2>
+<p>The application checks the correctness of the puzzle in real time:
+- Displays a success message when the puzzle is correctly assembled.
+- Provides helpful feedback if the assembly is incorrect.</p>
+<h2 id="dynamic-progress-updates">Dynamic Progress Updates</h2>
+<p>Puzzle states are synchronized across all participants, ensuring a seamless collaborative experience.</p></div>
             </div>
         </div>
 
@@ -108,14 +157,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="/js/jquery-3.6.0.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
         <script>
-            var base_url = "/",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/js/base.js"></script>
-        <script src="/search/main.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

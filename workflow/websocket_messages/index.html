@@ -7,11 +7,11 @@
         
         <meta name="author" content="WE">
         
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <title>Jigsaw Puzzle Application</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>WebSocket Messages - Jigsaw Puzzle Application</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
@@ -20,7 +20,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="/.">Jigsaw Puzzle Application</a>
+                <a class="navbar-brand" href="../..">Jigsaw Puzzle Application</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -31,51 +31,51 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="/." class="nav-link">Home</a>
+                                <a href="../.." class="nav-link">Home</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/features/overview/" class="dropdown-item">Overview</a>
+    <a href="../../features/overview/" class="dropdown-item">Overview</a>
 </li>
                                     
 <li>
-    <a href="/features/real_time_interaction/" class="dropdown-item">Real-Time Interaction</a>
+    <a href="../../features/real_time_interaction/" class="dropdown-item">Real-Time Interaction</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Workflow <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/workflow/overview/" class="dropdown-item">Overview</a>
+    <a href="../overview/" class="dropdown-item">Overview</a>
 </li>
                                     
 <li>
-    <a href="/workflow/socket_connection/" class="dropdown-item">Socket Connection</a>
+    <a href="../socket_connection/" class="dropdown-item">Socket Connection</a>
 </li>
                                     
 <li>
-    <a href="/workflow/drag_and_drop/" class="dropdown-item">Drag-and-Drop</a>
+    <a href="../drag_and_drop/" class="dropdown-item">Drag-and-Drop</a>
 </li>
                                     
 <li>
-    <a href="/workflow/puzzle_completion/" class="dropdown-item">Puzzle Completion</a>
+    <a href="../puzzle_completion/" class="dropdown-item">Puzzle Completion</a>
 </li>
                                     
 <li>
-    <a href="/workflow/websocket_messages/" class="dropdown-item">WebSocket Messages</a>
+    <a href="./" class="dropdown-item active">WebSocket Messages</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="/api_reference/" class="nav-link">API Reference</a>
+                                <a href="../../api_reference/" class="nav-link">API Reference</a>
                             </li>
                             <li class="navitem">
-                                <a href="/faq/" class="nav-link">FAQ</a>
+                                <a href="../../faq/" class="nav-link">FAQ</a>
                             </li>
                         </ul>
 
@@ -85,6 +85,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../puzzle_completion/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../api_reference/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -92,15 +102,63 @@
 
         <div class="container">
             <div class="row">
-
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
 
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#websocket-messages" class="nav-link">WebSocket Messages</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#summary-of-events" class="nav-link">Summary of Events</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
+<h1 id="websocket-messages">WebSocket Messages</h1>
+<h2 id="summary-of-events">Summary of Events</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Triggered By</th>
+<th>Purpose</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>piece_dropped</code></td>
+<td>Client</td>
+<td>Notify about a piece movement</td>
+<td>Updates puzzle state for all participants</td>
+</tr>
+<tr>
+<td><code>puzzle_solved</code></td>
+<td>Client</td>
+<td>Indicate puzzle completion</td>
+<td>Displays a success message</td>
+</tr>
+<tr>
+<td><code>puzzle_failed</code></td>
+<td>Client</td>
+<td>Indicate incorrect puzzle assembly</td>
+<td>Displays a failure message</td>
+</tr>
+</tbody>
+</table>
+<p>These events ensure real-time synchronization and interactivity.</p></div>
             </div>
         </div>
 
@@ -108,14 +166,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="/js/jquery-3.6.0.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
         <script>
-            var base_url = "/",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/js/base.js"></script>
-        <script src="/search/main.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
